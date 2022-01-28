@@ -4,4 +4,4 @@ sudo yum install -y httpd mariadb-server
 sudo systemctl start httpd
 sudo systemctl enable httpd
 sudo systemctl is-enabled httpd
-sudo touch /var/www/html/index.html
+echo "<?php phpinfo(); ?>" > /var/www/html/phpinfo.php
