@@ -5,3 +5,5 @@ sudo systemctl start httpd
 sudo systemctl enable httpd
 sudo systemctl is-enabled httpd
 echo "<?php phpinfo(); ?>" > /var/www/html/phpinfo.php
+#Remove php testing info
+#rm /var/www/html/phpinfo.php
