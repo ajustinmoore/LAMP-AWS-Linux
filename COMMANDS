@@ -7,3 +7,9 @@ sudo systemctl is-enabled httpd
 echo "<?php phpinfo(); ?>" > /var/www/html/phpinfo.php
 #Remove php testing info
 #rm /var/www/html/phpinfo.php
+
+#Setup MariaDB
+sudo systemctl start mariadb
+sudo mysql_secure_installation
+sudo systemctl enable mariadb
+
